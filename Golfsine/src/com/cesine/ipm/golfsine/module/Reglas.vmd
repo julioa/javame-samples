@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VisualDesign projectType="vmd-midp" version="1">
+    <Document version="2">
+        <Component componentID="0" typeID="C#Root">
+            <Property name="version" typeID="Pjava.lang.String" value="VMIDP-2.0"/>
+            <Component componentID="1" typeID="C#PointsCategory">
+                <Component componentID="2" typeID="C#MobileDevice">
+                    <Property name="start" typeID="C#MobileDeviceStartEventSource" value="R3"/>
+                    <Property name="resume" typeID="C#MobileDeviceResumeEventSource" value="R4"/>
+                    <Component componentID="3" typeID="C#MobileDeviceStartEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R17"/>
+                        <Component componentID="17" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R3"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R14"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="4" typeID="C#MobileDeviceResumeEventSource"/>
+                </Component>
+                <Component componentID="5" typeID="C#Display"/>
+            </Component>
+            <Component componentID="6" typeID="C#ControllersCategory">
+                <Component componentID="7" typeID="C#CommandListener"/>
+                <Component componentID="8" typeID="C#ItemCommandListener"/>
+                <Component componentID="9" typeID="C#ItemStateListener"/>
+            </Component>
+            <Component componentID="10" typeID="C#DisplayablesCategory">
+                <Component componentID="14" typeID="Cjavax.microedition.lcdui.Form">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VPantallaInicio"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A1:3_R16"/>
+                    <Property name="title" typeID="Pjava.lang.String" value="VBienvenidos al Manual de Reglas"/>
+                    <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
+                    <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A2:4_R1003_R59"/>
+                    <Component componentID="16" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R18"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R14"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R15"/>
+                        <Component componentID="18" typeID="C#ExitMidletEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R16"/>
+                            <Property name="mobileDevice" typeID="C#MobileDevice" value="R2"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="59" typeID="Cjavax.microedition.lcdui.ImageItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VimageItem1"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V"/>
+                        <Property name="commands" typeID="1C#ItemCommandEventSource" value="A1:3_R61"/>
+                        <Property name="defaultCommand" typeID="C#ItemCommandEventSource" value="R61"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="image" typeID="Cjavax.microedition.lcdui.Image" value="R60"/>
+                        <Property name="altText" typeID="Pjava.lang.String" value="V&lt;Missing Image&gt;"/>
+                        <Component componentID="61" typeID="C#ItemCommandEventSource">
+                            <Property name="eventHandler" typeID="C#EventHandler" value="R62"/>
+                            <Property name="item" typeID="Cjavax.microedition.lcdui.Item" value="R59"/>
+                            <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R19"/>
+                            <Component componentID="62" typeID="C#SwitchDisplayableEventHandler">
+                                <Property name="eventSource" typeID="C#EventSource" value="R61"/>
+                                <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R31"/>
+                            </Component>
+                        </Component>
+                    </Component>
+                    <Component componentID="100" typeID="Cjavax.microedition.lcdui.ImageItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VimageItem"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="image" typeID="Cjavax.microedition.lcdui.Image" value="R52"/>
+                        <Property name="altText" typeID="Pjava.lang.String" value="V&lt;Missing Image&gt;"/>
+                    </Component>
+                </Component>
+                <Component componentID="31" typeID="Cjavax.microedition.lcdui.List">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VMenu"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A2:3_R333_R57"/>
+                    <Property name="title" typeID="Pjava.lang.String" value="VMenu del Juego"/>
+                    <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
+                    <Property name="elements" typeID="1C#ListElementEventSource" value="A8:3_R353_R633_R643_R653_R663_R673_R684_R129"/>
+                    <Property name="selectCommand" typeID="C#CommandEventSource" value="R33"/>
+                    <Component componentID="35" typeID="C#ListElementEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R36"/>
+                        <Property name="string" typeID="Pjava.lang.String" value="VEl Juego"/>
+                        <Component componentID="36" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R35"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R37"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="33" typeID="C#ListSelectCommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R34"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R31"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R32"/>
+                        <Component componentID="34" typeID="C#ListEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R33"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="57" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R58"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R31"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R38"/>
+                        <Component componentID="58" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R57"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R14"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="63" typeID="C#ListElementEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R78"/>
+                        <Property name="string" typeID="Pjava.lang.String" value="VLos Palos y la Bola"/>
+                        <Component componentID="78" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R63"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R80"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="68" typeID="C#ListElementEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R146"/>
+                        <Property name="string" typeID="Pjava.lang.String" value="VAdministracion"/>
+                        <Component componentID="146" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R68"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R143"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="64" typeID="C#ListElementEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R108"/>
+                        <Property name="string" typeID="Pjava.lang.String" value="VResponsabilidades del Jugador"/>
+                        <Component componentID="108" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R64"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R101"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="65" typeID="C#ListElementEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R113"/>
+                        <Property name="string" typeID="Pjava.lang.String" value="VOrden del Juego"/>
+                        <Component componentID="113" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R65"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R111"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="66" typeID="C#ListElementEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R125"/>
+                        <Property name="string" typeID="Pjava.lang.String" value="VSituaciones de la Bola"/>
+                        <Component componentID="125" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R66"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R120"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="67" typeID="C#ListElementEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R149"/>
+                        <Property name="string" typeID="Pjava.lang.String" value="VModalidades de Juego"/>
+                        <Component componentID="149" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R67"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R142"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="129" typeID="C#ListElementEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R130"/>
+                        <Property name="string" typeID="Pjava.lang.String" value="VEl Green"/>
+                        <Component componentID="130" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R129"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R131"/>
+                        </Component>
+                    </Component>
+                </Component>
+                <Component componentID="37" typeID="Cjavax.microedition.lcdui.Form">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VJuego"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A2:3_R413_R42"/>
+                    <Property name="title" typeID="Pjava.lang.String" value="VEl Juego"/>
+                    <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
+                    <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A4:3_R453_R473_R483_R49"/>
+                    <Component componentID="42" typeID="C#CommandEventSource">
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R37"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R19"/>
+                    </Component>
+                    <Component componentID="41" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R44"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R37"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R40"/>
+                        <Component componentID="44" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R41"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R31"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="47" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem3"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V1.2 EjercerInfluencia Sobre una Bola"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VUn jugador o caddie no deben hacer nada para influir en la posición o movimiento de una bola excepto cuando las Reglas lo permitan"/>
+                    </Component>
+                    <Component componentID="45" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem1"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V1.1 El Juego"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VEl Juego de Golf consiste en jugar una bola con un palo desde el lugar de salida hasta el interior del agujero, mediante un golpe o sucesivos golpes conforme a las Reglas"/>
+                    </Component>
+                    <Component componentID="49" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem5"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V1.4 Puntos No Previstos de las Reglas"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                    </Component>
+                    <Component componentID="48" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem4"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V1.3 Acuerdo Para Exigir Reglas"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VLos jugadores no se pondrán de acuerdo para excluir el cumplimiento de una Regla ni suprimir cualquier penalidad incurrida"/>
+                    </Component>
+                </Component>
+                <Component componentID="69" typeID="Cjavax.microedition.lcdui.Form">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VPalos"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A1:3_R71"/>
+                    <Property name="title" typeID="Pjava.lang.String" value="VLos Palos y la Bola"/>
+                    <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
+                    <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A6:3_R723_R733_R743_R753_R763_R77"/>
+                    <Component componentID="71" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R79"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R69"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R40"/>
+                        <Component componentID="79" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R71"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R80"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="76" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem8"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V4.3 Palos Dañados; Reparación y Sustitución"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="Va. Daño en el Curso Normal del Juego Si, durante una vuelta estipulada, el palo de un jugador se daña en el curso normal del juego, éste puede: (i) usar el palo en su estado dañado por lo que falta de la vuelta estipulada; o (ii) repararlo o mandarlo reparar sin demorar indebidamente el juego; o (iii) como opción adicional, sólo si el palo está inservible para el juego, sustituir el palo con cualquier otro palo. La sustitución del palo no debe demorar indebidamente el juego, y no debe hacerse tomando prestado un palo seleccionado para el juego por cualquier otra persona que esté jugando en el campo.b. Dañado Fuera del Curso Normal del Juego Si, durante una vuelta estipulada, el palo de un jugador se daña sin que ocurra en el curso normal del juego y como consecuencia no cumple con las normas o se cambian sus características de juego, el palo no podrá posteriormente ser utilizado o sustituido durante la vuelta. c. Dañado Antes de la Vuelta Un jugador puede utilizar un palo que se ha dañado antes de una vuelta con tal de que el palo se ajuste a las Reglas en su estado dañado. Los daños producidos en un palo antes de una vuelta pueden ser reparados durante la vuelta, siempre que no se cambien las características de juego del palo y no se demore indebidamente el juego."/>
+                    </Component>
+                    <Component componentID="77" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem9"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V4.4. Máximo de Catorce Palos"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="Va. Selección y Adición de Palos El jugador no debe iniciar una vuelta estipulada con más de catorce palos. Queda limitado a los palos así seleccionados para esa vuelta excepto que, si comenzó con menos de catorce palos, puede añadir otros siempre que el número total no exceda de catorce. La adición de un(os) palo(s) no debe demorar indebidamente el juego (Regla 6-7) y el jugador no añadirá o pedirá prestado ningún palo elegido para el juego por cualquier otra persona que esté jugando en el campo. b. Los Compañeros Pueden Compartir Palos Los compañeros pueden compartir palos, siempre que el número total de palos llevados por los compañeros para compartir no exceda de catorce.c. Palos en Exceso Declarados Fuera de Juego Cualquier palo o palos llevados o usados infringiendo la Regla 4-3a (iii) o la 4-4 deben ser declarados fuera de juego por el jugador a su contrario en el juego por hoyos o a su marcador o a un compañero competidor en el juego por golpes, inmediatamente después de que se descubra que ha habido una infracción. El jugador no usara el palo o palos por lo que reste de la vuelta estipulada"/>
+                    </Component>
+                    <Component componentID="72" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V4.Los Palos"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VUn jugador que tenga alguna duda sobre la conformidad de un palo debería consultar con la Real Federación Española de Golf. Un fabricante debería presentar a la Real Federación Española de Golf dos muestras de un palo que se propone fabricar para que resuelva si dicho palo es conforme a las Reglas. Si el fabricante no presenta una muestra o espera por una decisión antes de fabricar y/o comercializar el palo, el fabricante asume el riesgo de una decisión en la que el palo no es conforme con las Reglas. Cualquier muestra presentada a la Real Federación Española de Golf quedará en propiedad de la misma a efectos de referencia. La Real Federación Española de Golf enviará una de las muestras al R &amp; A."/>
+                    </Component>
+                    <Component componentID="73" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem2"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="VDefiniciones"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VTodos los términos con definición aparecen escritos en Itálica (cursiva) y están ordenados alfabéticamente en la sección Definiciones. Ver pagina…"/>
+                    </Component>
+                    <Component componentID="74" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem6"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V4.1 Forma y Construccion de los Palos"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="Va. General Los palos de un jugador deben ser conformes con esta Regla y con las provisiones, especificaciones e interpretaciones establecidas en el Apéndice II. b. Desgaste y Alteraciones Un palo que es conforme con las Reglas cuando es nuevo, se considera que es conforme después de un desgaste producido por su uso normal. Cualquier parte de un palo que ha sido alterada intencionadamente se considerará como nueva y debe, en su estado alterado, ser conforme con las Reglas."/>
+                    </Component>
+                    <Component componentID="75" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem7"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V4.2  Características de Juego Cambiadas y Materiales Extraños"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="Va. Características de Juego Cambiadas Durante una vuelta estipulada, las características de juego de un palo no deben ser cambiadas intencionadamente por ajuste o por cualquier otro medio. b. Materiales Extraños No deben aplicarse materiales extraños a la cara del palo con el propósito de influir en el movimiento de la bola"/>
+                    </Component>
+                </Component>
+                <Component componentID="80" typeID="Cjavax.microedition.lcdui.List">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VLosPalosylaBola"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A2:3_R813_R87"/>
+                    <Property name="title" typeID="Pjava.lang.String" value="VSeleccione una Categoria"/>
+                    <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
+                    <Property name="elements" typeID="1C#ListElementEventSource" value="A2:3_R833_R84"/>
+                    <Property name="selectCommand" typeID="C#CommandEventSource" value="R81"/>
+                    <Component componentID="84" typeID="C#ListElementEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R90"/>
+                        <Property name="string" typeID="Pjava.lang.String" value="VLa Bola"/>
+                        <Component componentID="90" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R84"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R89"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="87" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R88"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R80"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R86"/>
+                        <Component componentID="88" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R87"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R31"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="81" typeID="C#ListSelectCommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R82"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R80"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R32"/>
+                        <Component componentID="82" typeID="C#ListEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R81"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="83" typeID="C#ListElementEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R85"/>
+                        <Property name="string" typeID="Pjava.lang.String" value="VLos Palos"/>
+                        <Component componentID="85" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R83"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R69"/>
+                        </Component>
+                    </Component>
+                </Component>
+                <Component componentID="89" typeID="Cjavax.microedition.lcdui.Form">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VLaBola"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A1:3_R97"/>
+                    <Property name="title" typeID="Pjava.lang.String" value="VLa Bola"/>
+                    <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
+                    <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A3:3_R913_R923_R93"/>
+                    <Component componentID="93" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem12"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V5.3 Bola inservible"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VUna bola está inservible para el juego si está visiblemente cortada, rajada o deformada. Una bola no está inservible para el juego solamente porque tenga adherido barro u otros materiales, su superficie este rayada o arañada o su pintura este dañada o descolorida. Si un jugador tiene razones para creer que su bola ha quedado inservible para el juego durante el juego del hoyo que se está jugando, puede levantar la bola, sin penalidad, para determinar si está inservible. Antes de levantar la bola, el jugador debe anunciar su intención a su contrario en el juego por hoyos, o a su marcador o a un compañero-competidor en el juego por golpes, y marcar la posición de la bola. Entonces puede levantarla y examinarla siempre que dé a su contrario, marcador o compañero- competidor la oportunidad de examinar la bola y observar el proceso de levantar y reponer la bola. La bola no debe ser limpiada cuando es levantada bajo la Regla 5-3. Si el jugador no cumple con todo o parte de este procedimiento, incurre en la penalidad de un golpe. Si se determina que la bola ha quedado inservible para el juego durante el juego del hoyo que se está jugando, el jugador puede sustituirla por otra bola, colocándola en el punto donde reposaba la bola original. De otra manera, la bola original será repuesta. Si un jugador sustituye una bola cuando no esta permitido y efectúa un golpe a la bola sustituida equivocadamente, incurre en la penalidad general por infracción de la Regla 5-3, pero no hay penalidad adicional bajo esta Regla o la Regla 15-1. Si una bola se rompe en pedazos como resultado de un golpe, el golpe se cancela y el jugador jugará una bola, sin penalidad, tan cerca como sea posible del punto desde el cual fue jugada la bola original (ver Regla 20-5)"/>
+                    </Component>
+                    <Component componentID="92" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem11"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V5.2 Materiales Extraños"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VNo deben aplicarse a la bola materiales extraños con el propósito de cambiar sus características de juego."/>
+                    </Component>
+                    <Component componentID="91" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem10"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V5.1 La bola"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VDefiniciones: Todos los términos con definición aparecen escritos en Itálica (cursiva) y están ordenados alfabéticamente en la sección Definiciones. Ver pagina… 5-1. General La bola que el jugador juegue deberá cumplir los requisitos especificados en el Apéndice III."/>
+                    </Component>
+                    <Component componentID="97" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R98"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R89"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R40"/>
+                        <Component componentID="98" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R97"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R80"/>
+                        </Component>
+                    </Component>
+                </Component>
+                <Component componentID="101" typeID="Cjavax.microedition.lcdui.Form">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VResponsabilidadesdelJugador"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A1:4_R102"/>
+                    <Property name="title" typeID="Pjava.lang.String" value="VLOS JUGADORES"/>
+                    <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
+                    <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A5:4_R1034_R1044_R1064_R1074_R110"/>
+                    <Component componentID="102" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R109"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R101"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R40"/>
+                        <Component componentID="109" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R102"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R31"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="103" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem13"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="VHandicas JUego por Hoyos"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VAntes de empezar un partido en una competición handicap, los jugadores deberían determinar mutuamente sus respectivos handicaps. Si un jugador comienza un partido habiendo declarado un handicap más alto al que tiene derecho y eso afecta al número de golpes dados o recibidos, está descalificado; de otra manera el jugador debe jugar con el handicap declarado."/>
+                    </Component>
+                    <Component componentID="110" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem17"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="VFinalizacion de juego por golpes"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="Va. Anotación de Resultados Después de cada hoyo el marcador debería comprobar el resultado con el competidor y anotarlo. Al termino de la vuelta el marcador debe firmar la tarjeta y entregarla al competidor. Si los resultados han sido anotados por más de un marcador, cada uno de ellos debe firmar la parte de la que es responsable. b. Firmar y Devolver la Tarjeta Después de terminada la vuelta, el competidor debería comprobar su resultado de cada hoyo y aclarar con el Comité cualquier punto dudoso. Debe asegurarse de que el marcador o marcadores han firmado la tarjeta, firmarla él mismo la tarjeta y devolverla al Comité tan pronto como sea posible."/>
+                    </Component>
+                    <Component componentID="106" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem15"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="VFirmar y devolver la targeta"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VDespués de terminada la vuelta, el competidor debería comprobar su resultado de cada hoyo y aclarar con el Comité cualquier punto dudoso. Debe asegurarse de que el marcador o marcadores han firmado la tarjeta, firmarla él mismo la tarjeta y devolverla al Comité tan pronto como sea posible."/>
+                    </Component>
+                    <Component componentID="107" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem16"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="VAlteración de la Tarjeta"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VNo puede hacerse ninguna modificación de una tarjeta después de que el competidor la ha devuelto al Comité"/>
+                    </Component>
+                    <Component componentID="104" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem14"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="VJuego por Golpes"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VJuego por Golpes En cualquier vuelta de una competición handicap, el competidor debe asegurarse que su handicap figura en su tarjeta antes de que sea devuelta al Comité. Si no figura ningún handicap en su tarjeta antes de que sea devuelta (Regla 6-6b), o si el handicap que figura en ella es más alto al que tiene derecho y esto afecta al número de golpes recibidos, está descalificado de la competición handicap; de otra manera, el resultado es válido."/>
+                    </Component>
+                </Component>
+                <Component componentID="111" typeID="Cjavax.microedition.lcdui.Form">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VOrdendelJuego"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A1:4_R112"/>
+                    <Property name="title" typeID="Pjava.lang.String" value="VOrden del Juego"/>
+                    <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
+                    <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A3:4_R1154_R1164_R117"/>
+                    <Component componentID="117" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem20"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Vc. Jugar Fuera de Turno"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VSi un jugador juega cuando debería haber jugado su contrario, no hay penalidad, pero el contrario puede inmediatamente requerir al jugador que cancele el golpe efectuado y, en el orden correcto, jugar una bola tan cerca como sea posible del punto desde el que la bola original fue jugada por última vez"/>
+                    </Component>
+                    <Component componentID="116" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem19"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Vb. Durante el Juego de un Hoyo"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VDespués de que ambos jugadores han iniciado el juego del hoyo, se jugará primero la bola más alejada del agujero. Si las bolas están equidistantes del agujero o si sus posiciones relativas respecto del agujero no son determinables, la bola que se juega primero debería decidirse por sorteo."/>
+                    </Component>
+                    <Component componentID="115" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem18"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Va. Iniciando el Juego del Hoyo"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="V El bando que ha de tener el honor en el primer lugar de salida está determinado por el orden de salidas. En ausencia del orden de salidas, el honor debería decidirse por sorteo. El bando que gana un hoyo obtendrá el honor en el siguiente lugar de salida. Si un hoyo ha quedado empatado, el bando que tenía el honor en el anterior lugar de salida lo conserva."/>
+                    </Component>
+                    <Component componentID="112" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R114"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R111"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R40"/>
+                        <Component componentID="114" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R112"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R31"/>
+                        </Component>
+                    </Component>
+                </Component>
+                <Component componentID="120" typeID="Cjavax.microedition.lcdui.Form">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VSituaciones"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A1:4_R124"/>
+                    <Property name="title" typeID="Pjava.lang.String" value="VSituaciones de la Bola"/>
+                    <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
+                    <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A5:4_R1214_R1224_R1234_R1274_R128"/>
+                    <Component componentID="127" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem24"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Vb. Bola Movida Después de Preparar el Golpe"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VSi la bola en juego de un jugador se mueve después de que ha preparado el golpe (por otra causa que no sea como resultado de un golpe), se considera que el jugador ha movido la bola e incurre en un golpe de penalidad. La bola debe ser repuesta, salvo que el movimiento de la bola ocurra después de que el jugador ha iniciado el golpe o el movimiento hacia atrás del palo para realizar el golpe y el golpe se haya ejecutado."/>
+                    </Component>
+                    <Component componentID="124" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R126"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R120"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R40"/>
+                        <Component componentID="126" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R124"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R31"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="123" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem23"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V18-2. Por el Jugador, Compañero, Caddie o Equipo"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VCuando la bola de un jugador está en juego, si: (i) el jugador, su compañero o cualquiera de sus caddies la levanta o la mueve, la toca intencionadamente (excepto con el palo al preparar el golpe), o causa que la bola se mueva excepto que una Regla lo permita, o (ii) el equipo del jugador o el de su compañero hace que la bola se mueva, él jugador incurre en la penalidad de un golpe. Si la bola es movida, debe ser repuesta salvo que el movimiento de la bola ocurra después de que el jugador haya iniciado el golpe o el movimiento hacia atrás del palo para realizar el golpe y el golpe se ejecute. Bajo las Reglas, no hay penalidad si un jugador accidentalmente causa que su bola se mueva en las siguientes circunstancias: - En la búsqueda de una bola en un obstáculo cubierta por impedimentos sueltos o arena, o de una bola en una condición anormal del terreno o de una bola que se cree que está en agua en un obstáculo de agua - Regla 12-1. - Al arreglar la tapa de un agujero o el impacto de una bola - Regla 16-1c. - Al medir - Regla 18-6. - Al levantar una bola bajo una Regla - Regla 20-1. - Al colocar o reponer una bola de acuerdo con una Regla - Regla 20-3a. - Al quitar un impedimento suelto en el green - Regla 23-1. - Al quitar obstrucciones movibles - Regla 24-1."/>
+                    </Component>
+                    <Component componentID="122" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem22"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V18-1. Por Causa Ajena"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VSi una bola en reposo es movida por una causa ajena, no hay penalidad y la bola debe ser repuesta."/>
+                    </Component>
+                    <Component componentID="121" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem21"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="VBOLA MOVIDA, DESVIADA O DETENIDA "/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                    </Component>
+                    <Component componentID="128" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem25"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V18-4. Por el Compañero-Competidor, su Caddie o Equipo en el Juego por Golpes"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VSi un compañero-competidor, su caddie o su equipo mueven la bola del jugador, la tocan o causan que se mueva, no hay penalidad. Si la bola se ha movido debe ser repuesta"/>
+                    </Component>
+                </Component>
+                <Component componentID="143" typeID="Cjavax.microedition.lcdui.Form">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VAdmin"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A1:4_R145"/>
+                    <Property name="title" typeID="Pjava.lang.String" value="VAdministracion"/>
+                    <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
+                    <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A9:4_R1624_R1634_R1644_R1654_R1664_R1674_R1684_R1694_R170"/>
+                    <Component componentID="145" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R147"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R143"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R40"/>
+                        <Component componentID="147" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R145"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R31"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="170" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem50"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Vf.Tarjeta de Resultados"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VEn el juego por golpes, el Comité debe proporcionar a cada competidor una tarjeta de resultados que contenga la fecha y el nombre del competidor o, en foursome o cuatro bolas (four ball) en el juego por golpes, los nombres de los competidores. En el juego por golpes, el Comité es responsable de la suma de los resultados y de la aplicación del handicap que figura en la tarjeta. En cuatro bolas (four ball) en el juego por golpes, el Comité es el responsable de anotar el resultado de la mejor bola en cada hoyo y en el proceso aplicar los handicaps anotados en la tarjeta, y sumar los resultados de la mejor bola. En competiciones Contra Bogey, Contra Par y Stableford, el Comité es el responsable de aplicar el handicap anotado en la tarjeta y determinar el resultado en cada hoyo así como el resultado global o puntos totales."/>
+                    </Component>
+                    <Component componentID="169" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem49"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Ve.Horario de Salida y Grupos"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VEl Comité debe establecer las horas de salida y, en el juego por golpes, organizar los grupos en los que deben jugar los competidores. Cuando una competición por hoyos se juega en un período prolongado, el Comité establecerá el límite de tiempo dentro del cual debe completarse cada vuelta. Cuando los jugadores están autorizados para fijar la fecha de su partido dentro de esos límites, el Comité debería anunciar que el partido debe jugarse a una hora determinada del último día del período, salvo que los jugadores acuerden hacerlo en una fecha anterior"/>
+                    </Component>
+                    <Component componentID="168" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem48"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Vd. Campo Impracticable"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VSi el Comité o su representante autorizado considera que por alguna razón el campo no está en condiciones de juego o que hay circunstancias que hacen imposible la realización apropiada del juego, puede, en el juego por hoyos o en el juego por golpes, ordenar una suspensión temporal del juego o, en el juego por golpes, declarar nulo y no valido el juego y cancelar todos los resultados de la vuelta en cuestión. Cuando se cancela una vuelta, todas las penalidades incurridas en esa vuelta se cancelan."/>
+                    </Component>
+                    <Component componentID="163" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem43"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="VCondiciones: Excluir una Regla"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VEl Comité debe establecer las condiciones bajo las cuales se ha de jugar una competición. El Comité no tiene autoridad para excluir una Regla de Golf. Ciertas Reglas específicas que rigen el juego por golpes son tan sustancialmente diferentes de aquellas que rigen el juego por hoyos que la combinación de las dos modalidades de juego no es factible y no está permitida. Los resultados de los partidos y las tarjetas entregadas en estas circunstancias, no deben ser aceptadas. En el juego por golpes el Comité puede limitar las funciones de un árbitro"/>
+                    </Component>
+                    <Component componentID="162" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem42"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="VEl Comité"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                    </Component>
+                    <Component componentID="167" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem47"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Vc. Campo de Prácticas"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VDonde no haya un campo de prácticas disponible fuera del área de un campo de competición, el Comité debería establecer, si fuera factible, la zona en la que los jugadores puedan practicar en cualquier día de una competición. En cualquier día de una competición por golpes, el Comité no debería normalmente permitir practicar en o hacia un green o desde un obstáculo del campo de la competición."/>
+                    </Component>
+                    <Component componentID="166" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem46"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Vb. Agujeros Nuevos"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VDeberían hacerse agujeros nuevos el día en el que comienza una competición por golpes, y en cualquier otra ocasión en que el Comité lo considere necesario, siempre que todos los competidores de una vuelta jueguen con cada uno de los agujeros situados en la misma posición"/>
+                    </Component>
+                    <Component componentID="165" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem45"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Va. Definición de Límites y Márgenes"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VEl Comité debe definir con precisión: (i) el campo y los fuera de límites, (ii) los márgenes de los obstáculos de agua y obstáculos de agua lateral, (iii) el terreno en reparación, y (iv) las obstrucciones y partes integrantes del campo"/>
+                    </Component>
+                    <Component componentID="164" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem44"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="VEl Campo"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                    </Component>
+                </Component>
+                <Component componentID="142" typeID="Cjavax.microedition.lcdui.Form">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VModalidades"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A1:4_R144"/>
+                    <Property name="title" typeID="Pjava.lang.String" value="VModalidades de Juego"/>
+                    <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
+                    <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A8:4_R1504_R1514_R1524_R1534_R1544_R1554_R1564_R157"/>
+                    <Component componentID="152" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem36"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V29-1. General"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VEn un threesome o en un foursome, durante cualquier vuelta estipulada los compañeros deben jugar alternativamente desde los lugares de salida y darán golpes alternos durante el juego de cada hoyo. Los golpes de penalidad no afectan al orden del juego."/>
+                    </Component>
+                    <Component componentID="153" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem37"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V29-2. Juego por Hoyos"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VSi un jugador juega cuando debería haberlo hecho su compañero, su bando pierde el hoyo."/>
+                    </Component>
+                    <Component componentID="154" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem38"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V29-3. Juego por Golpes"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VSi los compañeros ejecutan un golpe o golpes en orden incorrecto, dicho golpe o golpes serán cancelados y el bando incurre en la penalidad de dos golpes. El bando debe corregir el error jugando una bola en el orden correcto tan cerca como sea posible del punto desde el que se jugó por primera vez en orden incorrecto (ver la Regla 20-5). Si el bando juega un golpe desde el siguiente lugar de salida sin corregir primero el error o, en el caso del último hoyo de la vuelta, abandona el green sin declarar su intención de corregir el error, el bando está descalificado."/>
+                    </Component>
+                    <Component componentID="155" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem39"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="VRegla 30. Competiciones Contra Bogey, Contra Par y Stableford"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="V"/>
+                    </Component>
+                    <Component componentID="156" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem40"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Va. Competiciones Contra Bogey y Contra Par"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VEl recuento para las competiciones contra bogey y contra par se hace como en el juego por hoyos. Cualquier hoyo en el que un competidor no anota el resultado se considerará como perdido. El ganador es el competidor que tenga mejor resultado en la suma de los hoyos. El marcador es responsable de anotar solamente el número bruto de golpes en cada hoyo en el que el competidor obtenga un resultado neto igual o inferior que el resultado fijado"/>
+                    </Component>
+                    <Component componentID="157" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem41"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Vb. Competiciones Stableford"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VEl recuento en las competiciones Stableford se hace por puntos obtenidos en relación con un resultado fijado para cada hoyo, como sigue:"/>
+                    </Component>
+                    <Component componentID="144" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R148"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R142"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R40"/>
+                        <Component componentID="148" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R144"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R31"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="150" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem34"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="VOTRAS MODALIDADES DE JUEGO"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                    </Component>
+                    <Component componentID="151" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem35"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="VRegla 29. Threesomes y Foursomes"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                    </Component>
+                </Component>
+                <Component componentID="131" typeID="Cjavax.microedition.lcdui.Form">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VGreen"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="commands" typeID="1C#CommandEventSource" value="A1:4_R132"/>
+                    <Property name="title" typeID="Pjava.lang.String" value="VEl Green"/>
+                    <Property name="commandListener" typeID="C#CommandListener" value="R7"/>
+                    <Property name="items" typeID="1Cjavax.microedition.lcdui.Item" value="A8:4_R1344_R1354_R1364_R1374_R1384_R1394_R1404_R141"/>
+                    <Component componentID="137" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem29"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Vc. Reparación de Tapas de Agujeros, Marcas de Bola y Otros Daños"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VEl jugador puede reparar una vieja tapa de agujero o daños en el green causados por el impacto de una bola, esté o no la bola del jugador reposando en el green. Si una bola o un marcador de bola se mueve accidentalmente en el proceso de la reparación, la bola o el marcador de bola deben ser repuestos. No hay penalidad siempre que el movimiento de la bola sea directamente atribuible al acto específico de reparar una vieja tapa de agujero o daños en el green causados por el impacto de una bola."/>
+                    </Component>
+                    <Component componentID="136" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem28"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Vb. Levantar y Limpiar la Bola"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VUna bola en el green puede ser levantada y si se desea limpiada. La posición de la bola debe ser marcada antes de levantarla y la bola debe ser repuesta (ver Regla 20-1)."/>
+                    </Component>
+                    <Component componentID="139" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem31"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Ve. Colocarse a Horcajadas o Sobre la Línea de Putt"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VEl jugador no debe jugar un golpe en el green colocándose a horcajadas, o con cualquiera de sus pies tocando la línea de putt o una prolongación de ésta línea detrás de la bola."/>
+                    </Component>
+                    <Component componentID="138" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem30"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Vd. Probar la Superficie"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VDurante el juego de un hoyo, un jugador no debe probar la superficie del green haciendo rodar una bola o rascando o raspando la superficie."/>
+                    </Component>
+                    <Component componentID="141" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem33"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V16-2. Bola Colgando Sobre el Agujero"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VCuando cualquier parte de la bola cuelga sobre el borde del agujero, le está permitido al jugador suficiente tiempo para llegar al agujero sin demora indebida y diez segundos adicionales para determinar si la bola está en reposo. Si para entonces la bola no ha caído dentro del agujero, se considera que está en reposo. Si después la bola cae dentro del agujero, se considera que el jugador ha embocado con su ultimo golpe, y debe añadir un golpe de penalidad a su resultado del hoyo; de otra manera no hay penalidad bajo esta Regla"/>
+                    </Component>
+                    <Component componentID="140" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem32"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Vf. Jugar un Golpe Mientras Otra Bola Está en Movimiento"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VEl jugador no debe jugar un golpe mientras otra bola está en movimiento después de un golpe en el green, excepto que, si el jugador lo hace, no hay penalidad si era su turno de juego. (Levantar una bola que ayuda o interfiere al juego mientras otra bola está en movimiento"/>
+                    </Component>
+                    <Component componentID="132" typeID="C#CommandEventSource">
+                        <Property name="eventHandler" typeID="C#EventHandler" value="R133"/>
+                        <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R131"/>
+                        <Property name="command" typeID="Cjavax.microedition.lcdui.Command" value="R40"/>
+                        <Component componentID="133" typeID="C#SwitchDisplayableEventHandler">
+                            <Property name="eventSource" typeID="C#EventSource" value="R132"/>
+                            <Property name="displayable" typeID="Cjavax.microedition.lcdui.Displayable" value="R31"/>
+                        </Component>
+                    </Component>
+                    <Component componentID="135" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem27"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="Va. Tocar la Línea de Putt"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                        <Property name="text" typeID="Pjava.lang.String" value="VLa línea de putt no debe ser tocada, excepto: (i) el jugador puede quitar impedimentos sueltos, siempre que no presione nada hacia abajo; (ii) el jugador puede colocar el palo delante de la bola cuando prepara el golpe, siempre que no presione nada hacia abajo; (iii) al medir - Regla 18-6; (iv) al levantar la bola - Regla 16-1b; (v) al presionar hacia abajo un marcador de bola; (vi) al reparar viejas tapas de agujeros o marcas de bola en el green - Regla 16-1c; y (vii) al quitar obstrucciones movibles – Regla 24-1. (Indicación de la línea de putt en el green - ver la Regla 8-2b)."/>
+                    </Component>
+                    <Component componentID="134" typeID="Cjavax.microedition.lcdui.StringItem">
+                        <Property name="instanceName" typeID="Pjava.lang.String" value="VstringItem26"/>
+                        <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                        <Property name="label" typeID="Pjava.lang.String" value="V16-1. General"/>
+                        <Property name="itemCommandListener" typeID="C#ItemCommandListener" value="R8"/>
+                    </Component>
+                </Component>
+            </Component>
+            <Component componentID="11" typeID="C#CommandsCategory">
+                <Component componentID="15" typeID="Cjavax.microedition.lcdui.Command">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VSalirInicio"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="label" typeID="Pjava.lang.String" value="VCancel"/>
+                    <Property name="type" typeID="Pint" value="V3"/>
+                </Component>
+                <Component componentID="19" typeID="Cjavax.microedition.lcdui.Command">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VokCommand"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="label" typeID="Pjava.lang.String" value="VOk"/>
+                    <Property name="type" typeID="Pint" value="V4"/>
+                </Component>
+                <Component componentID="24" typeID="Cjavax.microedition.lcdui.Command">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VitemCommand"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="label" typeID="Pjava.lang.String" value="VItem"/>
+                    <Property name="type" typeID="Pint" value="V8"/>
+                </Component>
+                <Component componentID="29" typeID="Cjavax.microedition.lcdui.Command">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VVerLista"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="label" typeID="Pjava.lang.String" value="VVerLista"/>
+                    <Property name="type" typeID="Pint" value="V4"/>
+                </Component>
+                <Component componentID="32" typeID="C#ListSelectCommand">
+                    <Property name="label" typeID="Pjava.lang.String" value="V"/>
+                    <Property name="type" typeID="Pint" value="V1"/>
+                    <Property name="priority" typeID="Pint" value="V0"/>
+                    <Property name="ordinary" typeID="Pboolean" value="Vfalse"/>
+                </Component>
+                <Component componentID="38" typeID="Cjavax.microedition.lcdui.Command">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VSalirLista"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="label" typeID="Pjava.lang.String" value="VCancel"/>
+                    <Property name="type" typeID="Pint" value="V3"/>
+                </Component>
+                <Component componentID="40" typeID="Cjavax.microedition.lcdui.Command">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VSalir"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="label" typeID="Pjava.lang.String" value="VCancel"/>
+                    <Property name="type" typeID="Pint" value="V3"/>
+                </Component>
+                <Component componentID="86" typeID="Cjavax.microedition.lcdui.Command">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="VcancelCommand"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="label" typeID="Pjava.lang.String" value="VCancel"/>
+                    <Property name="type" typeID="Pint" value="V3"/>
+                </Component>
+            </Component>
+            <Component componentID="12" typeID="C#ResourcesCategory">
+                <Component componentID="52" typeID="Cjavax.microedition.lcdui.Image">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="Vimage1"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="resourcePath" typeID="Pjava.lang.String" value="V/LogoApp.jpg"/>
+                </Component>
+                <Component componentID="60" typeID="Cjavax.microedition.lcdui.Image">
+                    <Property name="instanceName" typeID="Pjava.lang.String" value="Vimage2"/>
+                    <Property name="codeGenerated" typeID="Pboolean" value="Vtrue"/>
+                    <Property name="resourcePath" typeID="Pjava.lang.String" value="V/Manual.jpg"/>
+                </Component>
+            </Component>
+            <Component componentID="13" typeID="C#DatabindingCategory"/>
+        </Component>
+    </Document>
+    <FlowScene version="1">
+        <Node componentID="101" descriptorID="componentNode101" x="-206" y="433"/>
+        <Node componentID="31" descriptorID="componentNode31" x="172" y="128"/>
+        <Node componentID="142" descriptorID="componentNode142" x="-199" y="-43"/>
+        <Node componentID="69" descriptorID="componentNode69" x="512" y="24"/>
+        <Node componentID="143" descriptorID="componentNode143" x="-209" y="59"/>
+        <Node componentID="131" descriptorID="componentNode131" x="325" y="14"/>
+        <Node componentID="111" descriptorID="componentNode111" x="-235" y="148"/>
+        <Node componentID="14" descriptorID="componentNode14" x="389" y="442"/>
+        <Node componentID="120" descriptorID="componentNode120" x="310" y="140"/>
+        <Node componentID="80" descriptorID="componentNode80" x="80" y="-3"/>
+        <Node componentID="2" descriptorID="componentNode2" x="-218" y="254"/>
+        <Node componentID="37" descriptorID="componentNode37" x="512" y="316"/>
+        <Node componentID="89" descriptorID="componentNode89" x="524" y="162"/>
+    </FlowScene>
+</VisualDesign>
