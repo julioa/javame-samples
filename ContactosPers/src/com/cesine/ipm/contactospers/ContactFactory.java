@@ -28,7 +28,7 @@ public class ContactFactory {
     private static final String STORE_NAME = "ContactPers"; // Nombre del recordStore
     private Vector lista = new Vector(); // Vector que guarda la lista de contactos
     // Array para facilitar la inserción inicial de datos
-    private String[][] inicio = {{"Julio", "Arrebola", "julioa@computer.org", "609448859"}};
+    private String[][] inicio = {{"Julio", "Arrebola", "julioa@computer.org", "600000000"}};
 
     private ContactFactory() {
         // En el constructor vemos si existe el recordstore y si no es asi lo creamos

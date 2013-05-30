@@ -17,7 +17,7 @@ public class ContactFactory {
 
     private Vector lista = new Vector();
 
-    private String[][] inicio = {{"Julio", "Arrebola", "julioa@computer.org", "609448859"}};
+    private String[][] inicio = {{"Julio", "Arrebola", "julioa@computer.org", "600000000"}};
 
     private ContactFactory() {
         for (int i=0; i<inicio.length; i++) {
